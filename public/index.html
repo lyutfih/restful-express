@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Routes</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div class="p-4 w-full min-w-100 flex justify-center">
+        
+        <section>
+            <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+                    <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+                        <h2 class="text-3xl font-bold sm:text-4xl mb-4">Users</h2>
+                            <div class="mockup-browser bg-base-300 border">
+                                <div class="mockup-browser-toolbar">
+                                  <div class="input">/api/users/</div>
+                                </div>
+                                <div class="bg-base-200 flex flex-col justify-center px-4 py-8">
+                                    <div class="mockup-code">
+                                        <pre data-prefix="$"><code class="text-purple-400">[{</code></pre>
+                                        <pre data-prefix="$"><code class="text-orange-500">"first_name": "John",</code></pre>
+                                        <pre data-prefix="$"><code class="text-orange-500">"last_name": "Doe",</code></pre>
+                                        <pre data-prefix="$"><code class="text-orange-500">"age": <span class="text-green-300">22</span></code></pre>
+                                        <pre data-prefix="$"><code class="text-purple-400">}]</code></pre>
+                                        <pre data-prefix="$" class="bg-success text-success-content"><code>Done!</code></pre>
+                                      </div>
+                                      <p class="mt-5">This endpoint returns a list of users.<br>
+                                        An array of objects containing user information such as first name, last name, and age. <br></p>
+                                 </div>
+                              </div>
+                    </div>
+    
+                    <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                        >
+                            <h2 class="mt-2 font-bold">Get Single User</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                GET.  /api/users/:id
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                            
+                        >
+                            <h2 class="mt-2 font-bold">Get User Orders</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                GET.  /api/users/:id/orders
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                          
+                        >
+                            <h2 class="mt-2 font-bold">Create User</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                POST.  /api/users/
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                        
+                        >
+                            <h2 class="mt-2 font-bold">Update User</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                PUT.  /api/users/:id
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                          
+                        >
+                            <h2 class="mt-2 font-bold">Set/Check Inactive</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                PUT. /api/users/:id/check-inactive
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                       
+                        >
+                            <h2 class="mt-2 font-bold">Delete User</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                DELETE.  /api/users/:id
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+                    <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+                        <h2 class="text-3xl font-bold sm:text-4xl mb-4">Orders</h2>
+                            <div class="mockup-browser bg-base-300 border">
+                                <div class="mockup-browser-toolbar">
+                                  <div class="input">/api/orders/</div>
+                                </div>
+                                <div class="bg-base-200 flex flex-col justify-center px-4 py-8">
+                                    <div class="mockup-code">
+                                        <pre data-prefix="$"><code class="text-purple-400">[{</code></pre>
+                                        <pre data-prefix="$"><code class="text-orange-500">"price": <span class="text-green-300">30</span>,</code></pre>
+                                        <pre data-prefix="$"><code class="text-orange-500">"user_id":<span class="text-green-300">2</span>,</code></pre>
+                                        <pre data-prefix="$"><code class="text-orange-500">"date": <span class="text-blue-300">2021-01-04 06:00:00</span></code></pre>
+                                        <pre data-prefix="$"><code class="text-purple-400">}]</code></pre>
+                                        <pre data-prefix="$" class="bg-primary text-primary-content"><code>Loading.. <span class="loading loading-ring loading-xs mt-1"></span></code></pre>
+                                      </div>
+                                      <p class="mt-5">This endpoint returns a list of orders.<br>
+                                        An array of objects containing order information such as price, user id, and date. <br></p>
+                                 </div>
+                              </div>
+                    </div>
+    
+                    <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                        >
+                            <h2 class="mt-2 font-bold">Get Single Order</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                GET.  /api/orders/:id
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                          
+                        >
+                            <h2 class="mt-2 font-bold">Create Order</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                POST.  /api/orders/
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                        
+                        >
+                            <h2 class="mt-2 font-bold">Update Order</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                PUT.  /api/orders/:id
+                            </p>
+                        </span>
+    
+                        <span
+                            class="block rounded-xl border border-gray-500 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+                       
+                        >
+                            <h2 class="mt-2 font-bold">Delete Order</h2>
+    
+                            <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-300">
+                                DELETE.  /api/orders/:id
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+
+    
+</body>
+
+</html>
